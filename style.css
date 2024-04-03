@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+
+    --font1: "Poppins", sans-serif;
+    --font2:  "Roboto", sans-serif;
+    --font3: "Reddit Mono", monospace;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font1);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 50% 10% 40%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.left__top{
+    /* background: rgb(184, 42, 42); */
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.left__top h1{
+    width: 80%;
+    font-size: 6rem;
+    font-weight: 500;
+    margin: 0 auto;
+    line-height: 6rem;
+    padding-top: 0.7em;
+}
+.left__center{
+    /* background: royalblue; */
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 3.8em;
+    padding-bottom: 1em;
+
+}
+.left__center h6{
+    padding: 0.2em 1em;
+    border: 1.5px solid black;
+    border-radius: 20px;
+}
+.left__center h6 .dot1{
+    margin: 4px 0 0 4px;
+    height: 10px;
+    width: 10px;
+    background-color: #c33535;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.left__center h6 .dot2{
+    margin: 4px 0 0 4px;
+    height: 10px;
+    width: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.left__bottom{
+    /* background: greenyellow; */
+    grid-row: 4/4;
+    grid-column: 1/2;
+    padding-left: 3.8em;
+    padding-top: 1em;
+}
+
+.left__bottom h6{
+    font-size: 0.8rem;
+}
+
+.left__bottom p{
+    font-size: 0.8rem;
+    width: 70%;
+}
+
+.right__top{
+    /* background-color: purple; */
+    grid-row: 1/1;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.right__top i{
+    font-size: 0.7rem;
+}
+
+.right__bleft{
+    /* background: brown; */
+    grid-row: 2/5;
+    grid-column: 2/2;
+    display: flex;
+    align-items: center;
+    padding-top: 10em;
+}
+
+.right__bleft p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transform: rotate(270deg);
+}
+
+.right__bright{
+    /* background: cyan; */
+    grid-row: 2/5;
+    grid-column: 3/4;   
+}
+
+.right__bright img{
+    height: 100%;
+    width: 80%;
+}
+
+.circle{
+    position: absolute;
+    top: 60%;
+    left: 92%;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    background-color: #000000;
+    
+}
+.circle p{
+    color: white;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 1010px){
+    .left__top h1{
+        font-size: 4.5rem;
+        line-height: 5.5rem;
+        padding-top: 0.3em;
+    
+        
+    }
+    .left__center{
+        padding-left: 2.5em;
+    }
+
+    .left__bottom{
+        padding-left: 2.5em;
+    }
+    
+    .left__bottom p{
+        font-size: 0.7rem;
+        width: 90%;
+        font-weight: 500;
+    }
+
+    .right__bleft{
+        grid-row: 2/5;
+        grid-column: 2/2;
+        display: flex;
+        align-items: center;
+        padding-top: 9em;
+    }
+    
+    .right__bleft p{
+        font-size: 1.2rem;
+    }
+    
+    .circle{
+        top: 50%;
+        height: 90px;
+        width: 90px;
+    }
+    .circle p{
+        font-size: 0.65rem;
+    }
+    
+}
+
+@media (max-width: 760px){
+    .left__top h1{
+        width: 82%;
+        font-size: 3.8rem;
+        line-height: 4rem;
+        padding-top: 0.3em;
+    }
+    .left__center{
+        padding-left: 2em;
+    }
+
+    .left__bottom{
+        padding-left: 2em;
+    }
+    
+    .left__bottom p{
+        font-size: 0.6rem;
+        width: 95%;
+    }
+
+    .right__bleft{
+        grid-row: 2/5;
+        grid-column: 2/2;
+        display: flex;
+        align-items: center;
+        padding-top: 9em;
+    }
+    
+    .right__bleft p{
+        font-size: 1.2rem;
+    }
+
+    .right__top{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    
+    .right__top i{
+        font-size: 0.6rem;
+    }
+
+    .right__bleft{
+        display: flex;
+        justify-content: center;
+        padding-top: 6em;
+    }
+    
+    .right__bleft p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .circle{
+        top: 35%;
+        height: 60px;
+        width: 60px;
+    }
+    .circle p{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 625px){
+    main{
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 20% 10% 30% 20%;
+    }
+    
+    .left__top{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    
+    .left__top h1{
+        width: 80%;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .right__top{
+        grid-row: 2/3;
+        grid-column: 1/3;
+        font-size: 1rem;
+    }
+    
+    .right__top i{
+        font-size: 0.6rem;
+    }
+        
+    .right__bleft{
+        grid-row: 3/4;
+        grid-column: 1/2;
+        padding-top: 4em;
+    }
+    
+    .right__bleft p{
+        font-size: 1rem;
+    }
+    
+    .right__bright{
+        grid-row: 3/4;
+        grid-column: 2/3;   
+    }
+    
+    .right__bright img{
+        width: 80%;
+        object-fit: cover;
+        object-position: 0 80%;
+    }
+
+    .left__center{
+        grid-row: 4/5;
+        grid-column: 1/3;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .left__bottom{
+        grid-row: 5/6;
+        grid-column: 1/3;
+        padding-left: 2em;
+        padding-top: 1em;
+    }
+
+    .left__bottom p{
+        width: 90%;
+    }
+
+    .circle{
+        top: 60%;
+        left: 82%;
+        height: 60px;
+        width: 60px;
+    }
+    .circle p{
+        font-size: 0.5rem;
+    }
+    
+
+}
